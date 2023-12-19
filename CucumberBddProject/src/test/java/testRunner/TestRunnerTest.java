@@ -1,10 +1,11 @@
 package testRunner;
 
 import org.junit.runner.RunWith;
+import org.testng.annotations.Listeners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-
+@Listeners(generic_Utility.ListenersImplementaionClass.class)
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
