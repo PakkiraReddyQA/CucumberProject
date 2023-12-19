@@ -120,7 +120,7 @@
   </dependencies>
  <profiles>
   <profile>
-			<id>paralell</id>
+			<id>Batch</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -129,7 +129,7 @@
 						<version>3.0.0-M8</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng_paralellExecution.xml</suiteXmlFile>
+								<suiteXmlFile>AllClasstestng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
