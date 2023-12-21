@@ -24,7 +24,7 @@ import vTiger.ObjectReposotary.HomePage;
 import vTiger.ObjectReposotary.LoginPage;
 import vTiger.ObjectReposotary.OrganizationInfoPage;
 import vTiger.ObjectReposotary.OrganizationPage;
-@Listeners(generic_Utility.ListenersImplementaionClass.class)
+
 public class VitgerAppTest extends BaseClass {
 	
 	public WebDriver driver;
@@ -32,7 +32,7 @@ public class VitgerAppTest extends BaseClass {
 	
 	@Before
 	public void setUp() throws Exception
-	{
+{
 		log=Logger.getLogger("Vtiger App");
 		PropertyConfigurator.configure(".\\src\\test\\resources\\log4j.properties");
 		
