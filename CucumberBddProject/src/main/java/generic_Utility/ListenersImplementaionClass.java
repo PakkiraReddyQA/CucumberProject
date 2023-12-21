@@ -1,5 +1,6 @@
  package generic_Utility;
 
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -15,7 +16,8 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
  * @author pakkira Reddy
  *
  */
-public class ListenersImplementaionClass implements ITestListener{
+public class ListenersImplementaionClass implements ITestListener
+{
 ExtentReports reports;
 ExtentTest test;
 

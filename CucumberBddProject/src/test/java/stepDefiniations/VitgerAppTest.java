@@ -9,8 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 
 import generic_Utility.BaseClass;
+import generic_Utility.ExcelFileUtility;
+import generic_Utility.JavaUtility;
+import generic_Utility.WebDriverUtility;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -20,16 +24,15 @@ import vTiger.ObjectReposotary.HomePage;
 import vTiger.ObjectReposotary.LoginPage;
 import vTiger.ObjectReposotary.OrganizationInfoPage;
 import vTiger.ObjectReposotary.OrganizationPage;
-
+@Listeners(generic_Utility.ListenersImplementaionClass.class)
 public class VitgerAppTest extends BaseClass {
 	
-	public WebDriver driver=null;
+	public WebDriver driver;
 	public HomePage hp;
 	
 	@Before
 	public void setUp() throws Exception
 	{
-	
 		log=Logger.getLogger("Vtiger App");
 		PropertyConfigurator.configure(".\\src\\test\\resources\\log4j.properties");
 		
@@ -40,7 +43,7 @@ public class VitgerAppTest extends BaseClass {
 		//Launch the browser
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
-//							WebDriverManager.chromedriver().setup();
+////							WebDriverManager.chromedriver().setup();
 //							ChromeOptions options=new ChromeOptions();
 //							options.addArguments("--remote-allow-origins=*");
 			log.info("====="+BROWSER+" Browser Launched=====");
@@ -150,8 +153,11 @@ public void close_the_browser() {
 }
 
 @After
-public void tearDown()
+public void tearDown() throws IOException
 {
+	WebDriverUtility wUtil=new WebDriverUtility();
+	wUtil.takescreenshot(driver, "VtigerScreen"+new JavaUtility().getRandomNumber());
+
 	driver.close();
 	log.info("====Browser Closed=====");
 	log.info("====DataBase Closed Successfully===");
