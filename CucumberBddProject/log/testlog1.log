@@ -518,3 +518,19 @@
 2023-12-21 07:02:28,975 [main] INFO Vtiger App - ====Clicked On Org lookUp img
 2023-12-21 07:02:33,857 [main] INFO Vtiger App - ====Browser Closed=====
 2023-12-21 07:02:33,858 [main] INFO Vtiger App - ====DataBase Closed Successfully===
+2023-12-21 07:47:13,099 [main] INFO Vtiger App - =====chrome Browser Launched=====
+2023-12-21 07:47:18,721 [main] INFO Vtiger App - http://localhost:8888
+2023-12-21 07:47:18,723 [main] INFO Vtiger App - ===Opening URL====
+2023-12-21 07:47:20,455 [main] INFO Vtiger App - ===login to application===
+2023-12-21 07:47:30,366 [main] INFO Vtiger App - =====Clicked on Org Link
+2023-12-21 07:47:32,632 [main] INFO Vtiger App - ====Clicked On Org lookUp img
+2023-12-21 07:47:38,845 [main] INFO Vtiger App - ====Browser Closed=====
+2023-12-21 07:47:38,845 [main] INFO Vtiger App - ====DataBase Closed Successfully===
+2023-12-21 07:47:38,868 [main] INFO Vtiger App - =====chrome Browser Launched=====
+2023-12-21 07:47:40,938 [main] INFO Vtiger App - http://localhost:8888
+2023-12-21 07:47:40,939 [main] INFO Vtiger App - ===Opening URL====
+2023-12-21 07:47:42,400 [main] INFO Vtiger App - ===login to application===
+2023-12-21 07:47:52,648 [main] INFO Vtiger App - =====Clicked on Org Link
+2023-12-21 07:47:54,938 [main] INFO Vtiger App - ====Clicked On Org lookUp img
+2023-12-21 07:48:00,384 [main] INFO Vtiger App - ====Browser Closed=====
+2023-12-21 07:48:00,384 [main] INFO Vtiger App - ====DataBase Closed Successfully===
