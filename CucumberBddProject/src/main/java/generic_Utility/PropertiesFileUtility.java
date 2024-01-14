@@ -11,5 +11,13 @@ public class PropertiesFileUtility {
 		pos.load(fis);
 		return pos.getProperty(key);
 	}
+	
+	public String readDataFromLearningChainPropertys(String key) throws Exception
+	{
+		FileInputStream fis=new FileInputStream(Iconstant.LearningChainfilePath);
+		Properties pos=new Properties();
+		pos.load(fis);
+		return pos.getProperty(key);
+	}
 
 }
