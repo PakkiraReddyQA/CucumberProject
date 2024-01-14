@@ -1,8 +1,6 @@
  package testRunner;
 
 import org.junit.runner.RunWith;
-import org.testng.annotations.Test;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -22,7 +20,7 @@ import io.cucumber.junit.CucumberOptions;
 
 	    
 		)
-@Test
+
 public class TestRunnerTest {
 	
 	
